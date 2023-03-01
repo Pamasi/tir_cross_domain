@@ -1,6 +1,6 @@
 #  Cross-Domain Object Detection for UAV-based Thermal Imaging
 
-
+Semester project done by Paolo Dimasi, Alberto Foti and Samuele Pino for the course 01URPOV - Machine learning for vision and multimedia at Politecnico of Turin.
 
 ## Installation
 
@@ -84,6 +84,8 @@ python3 detect.py --weights yolov7-tir.pt --conf 0.25 --img 640 --source images/
     </a>
 </div>
 
+## Citation
+As long as you cite us and not intend it for military purpose you are free to use it.
 
 ## Acknowledgements
 
@@ -93,5 +95,8 @@ python3 detect.py --weights yolov7-tir.pt --conf 0.25 --img 640 --source images/
 * [https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset](https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset)
 
 
-## Copyright
+
 </details>
+
+## Copyright
+Copyright (C) 2022  Paolo Dimasi, Alberto Foti, Samuele Pino
