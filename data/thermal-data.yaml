@@ -1,0 +1,11 @@
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+path: /path2dataset/ThermalCamera/tir_ai/mashup_dataset/thermal
+train: /path2dataset/images/train  
+val: /path2dataset/images/val  
+test: /path2dataset/images/test 
+
+# number of classes
+nc: 4
+
+# class names
+names: {'person':0,'bike':1,'car':2,'other vehicle':3}
