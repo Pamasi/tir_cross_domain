@@ -85,7 +85,7 @@ python3 detect.py --weights yolov7-tir.pt --conf 0.25 --img 640 --source images/
 </div>
 
 ## Citation
-As long as you cite us and not intend it for military purpose you are free to use it.
+As long as you cite us  you are free to use it.
 
 ## Acknowledgements
 
