@@ -13,8 +13,6 @@ apt install -y zip htop screen libgl1-mesa-glx
 # pip install required packages
 pip install -r requirements.txt
 
-# go to code folder
-cd /yolov7
 ```
 
 </details>
