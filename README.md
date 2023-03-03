@@ -1,6 +1,6 @@
 #  Cross-Domain Object Detection for UAV-based Thermal Imaging
 
-Semester project done by Paolo Dimasi, Alberto Foti and Samuele Pino for the course 01URPOV - Machine learning for vision and multimedia at Politecnico of Turin.
+Semester project done by [Paolo Dimasi](https://github.com/Pamasi), [Alberto Foti](https://github.com/XXmorpheusX) and [Samuele Pino](https://github.com/SamuelePino) for the course 01URPOV - Machine learning for vision and multimedia at Politecnico of Turin.
 
 ## Installation
 
