@@ -42,7 +42,7 @@ python3 train.py --workers 32 --device 0  --batch-size 32 --data cfg/thermal-dat
 ``` shell
 # finetune p5 models
 python3 train.py --workers 8 --device 0 --batch-size 32 --data data/custom.yaml --img 640 512 --cfg cfg/training/yolov7-custom.yaml --weights 'best.pt' --name yolov7-pretrained--hyp data/hyp.yaml
-
+```
 
 ## Inference
 
