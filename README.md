@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ## Testing
 
 ``` shell
-python3 test.py --data data/data.yaml --img 640 --batch 32 --conf 0.001 --iou 0.65 --device 0 --weights yolov7.pt --name yolov7_640_val
+python3 test.py --data data/data.yaml --img 640 --batch 32 --conf 0.001 --iou 0.65 --device 0 --weights <path/yolov7-weight.pt> --name <your_yolov7_trained_name>
 ```
 
 
@@ -33,7 +33,7 @@ Data preparation
 
 ``` shell
 # train yolov7  models
-python3 train.py --workers 32 --device 0  --batch-size 32 --data cfg/thermal-data.yaml --img 640 512 --cfg cfg/network/yolov7-tiny-silu.yaml --name yolov7-tir --hyp data/hyp.yaml  --epochs 100 "''"
+python3 train.py --workers 32 --device 0  --batch-size 32 --data cfg/thermal-data.yaml --img 640 512 --cfg cfg/network/yolov7-tiny-silu.yaml --name <your_yolov7_name> --hyp data/hyp.yaml  --epochs 100  --weights "''"
 
 ```
 
@@ -41,19 +41,19 @@ python3 train.py --workers 32 --device 0  --batch-size 32 --data cfg/thermal-dat
 
 ``` shell
 # finetune p5 models
-python3 train.py --workers 8 --device 0 --batch-size 32 --data data/custom.yaml --img 640 512 --cfg cfg/training/yolov7-custom.yaml --weights 'best.pt' --name yolov7-pretrained--hyp data/hyp.yaml
+python3 train.py --workers 8 --device 0 --batch-size 32 --data data/custom.yaml --img 640 512 --cfg cfg/training/yolov7-custom.yaml --weights <path/yolov7-weight.pt> --name <your_yolov7_pretrained_name> --hyp data/hyp.yaml
 ```
 
 ## Inference
 
 On video:
 ``` shell
-python3 detect.py --weights yolov7-tir.pt --conf 0.25 --img 640 --source yourvideo.mp4
+python3 detect.py --weights <path/yolov7-weight.pt> --conf 0.25 --img 640 --source <path/yourvideo.mp4>
 ```
 
 On image:
 ``` shell
-python3 detect.py --weights yolov7-tir.pt --conf 0.25 --img 640 --source images/yourimage.jpg
+python3 detect.py --weights <path/yolov7-weight.pt> --conf 0.25 --img 640 --source <path/yourimage.jpg>
 ```
 
 <div align="center">
